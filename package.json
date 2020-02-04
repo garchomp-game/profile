@@ -1,0 +1,24 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "My ultimate Nuxt.js project",
+  "author": "garchomp-game",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.0.0",
+    "node-sass": "^4.13.1",
+    "pug": "2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^8.0.2"
+  }
+}
