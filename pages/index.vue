@@ -2,10 +2,11 @@
 v-layout(column='', justify-center='', align-center='')
   v-flex(xs12='', sm8='', md6='')
     .text-center
-    v-card.top-profile-card
-      v-img.dragonne-center(:src='dragonneImg' aspect-ratio='2' width='250')
+    v-card.pt-6
+      v-img.mx-auto(:src='dragonneImg' aspect-ratio='2' width='250')
       v-card-title.headline ようこそ！たくの自己紹介ページへ！
-      v-card-text ここにいろいろ書いていくよ！
+      v-card-text
+        top-profile
       v-card-actions
         v-spacer
         v-btn(color='primary', nuxt='', to='/inspire') 自己紹介詳細ページへ
@@ -13,19 +14,19 @@ v-layout(column='', justify-center='', align-center='')
 
 <script>
 import Dragonne from '~/assets/images/dragonne.jpg'
+import TopProfile from '~/components/TopProfile.vue'
 
 export default {
   data () {
     return {
       dragonneImg: Dragonne
     }
+  },
+  components: {
+    TopProfile
   }
 }
 </script>
 
 <style lang="sass">
-  .top-profile-card
-    padding-top: 30px
-  .dragonne-center
-    margin: 0 auto
 </style>
